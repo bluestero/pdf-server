@@ -1,0 +1,10 @@
+prepare:
+  steps:
+    - name: Setting up the permission.
+      command: chmod +x setup.sh
+    - name: Installing the dependencies.
+      command: ./setup.sh
+test:
+  steps: []
+run:
+  steps: []
