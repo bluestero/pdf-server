@@ -15,4 +15,4 @@ cd Stirling-PDF
 chmod +x ./gradlew
 ./gradlew build
 
-mv /home/user/app/config /home/user/app/.git/Stirling-PDF/config
+mv /home/user/app/configs /home/user/app/.git/Stirling-PDF/configs
