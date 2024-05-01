@@ -15,3 +15,6 @@ git clone https://github.com/Stirling-Tools/Stirling-PDF.git
 cd Stirling-PDF
 chmod +x ./gradlew
 ./gradlew build
+
+mv /home/user/app/config /home/user/app/.git/Stirling-PDF/config
+./gradlew bootRun
