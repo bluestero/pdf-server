@@ -1,8 +1,7 @@
-nix-env -iA nixpkgs.jdk11
+nix-env -iA nixpkgs.jdk17
 nix-env -iA nixpkgs.libtool
 nix-env -iA nixpkgs.leptonica
 nix-env -iA nixpkgs.libreoffice
-nix-env -iA nixpkgs.libreoffice-bin
 nix-env -iA nixpkgs.unoconv
 nix-env -iA nixpkgs.pngquant
 nix-env -iA nixpkgs.unpaper
@@ -17,4 +16,3 @@ chmod +x ./gradlew
 ./gradlew build
 
 mv /home/user/app/config /home/user/app/.git/Stirling-PDF/config
-./gradlew bootRun

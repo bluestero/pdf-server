@@ -7,4 +7,5 @@ prepare:
 test:
   steps: []
 run:
-  steps: []
+    - name: Booting up the Stirling-PDF.
+      command: /home/user/app/.git/Stirling-PDF/gradlew bootRun
