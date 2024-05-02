@@ -4,7 +4,8 @@ It is a robust, locally hosted web-based PDF manipulation tool using Docker. It 
 Stirling PDF does not initiate any outbound calls for record-keeping or tracking purposes.
 
 All files and PDFs exist either exclusively on the client side, reside in server memory only during task execution, or temporarily reside in a file solely for the execution of the task. Any file downloaded by the user will have been deleted from the server by that point.
-For more features and details, can refer to their GitHub: ![https://github.com/Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF).
+
+For more features and details, can refer to their GitHub: https://github.com/Stirling-Tools/Stirling-PDF.
 
 # Prerequisites
 To follow along this blog post, all you need is a Codesphere Account which you can create by visiting ![here](https://codesphere.com/ide/signin).
@@ -20,7 +21,7 @@ To follow along this blog post, all you need is a Codesphere Account which you c
 ![Codesphere Workspace Page](readme/2-Workspace-Page.JPG?raw=true)
 
 
-3. Put ![https://github.com/codesphere-community/pdf-server](https://github.com/codesphere-community/pdf-server) as the repository link and select your desired configuration. Recommended is to select “Always on” in the Deployment mode to have your web application running always.
+3. Put https://github.com/Stirling-Tools/Stirling-PDF as the repository link and select your desired configuration. Recommended is to select “Always on” in the Deployment mode to have your web application running always.
 
 ![Workspace configuration](readme/3-Workspace-Config.JPG?raw=true)
 
