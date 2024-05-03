@@ -12,8 +12,6 @@ nix-env -iA nixpkgs.ocrmypdf
 
 pip3 install uno opencv-python-headless unoconv pngquant WeasyPrint
 
-mkdir .git
-cd .git
 git clone https://github.com/Stirling-Tools/Stirling-PDF.git
 cd Stirling-PDF
 chmod +x ./gradlew
