@@ -9,4 +9,4 @@ test:
 run:
   steps:
     - name: Booting up the Stirling-PDF.
-      command: cd /home/user/app/.git/Stirling-PDF && ./gradlew bootRun
+      command: cd /home/user/app/Stirling-PDF && ./gradlew bootRun
