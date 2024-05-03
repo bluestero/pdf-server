@@ -1,19 +1,16 @@
-nix-shell -p jdk17
-nix-shell -p gnumake
-nix-shell -p libgcc
-nix-shell -p automake
-nix-shell -p autoconf
-nix-shell -p libtool
-nix-shell -p pkg-config
-nix-shell -p zlib
-nix-shell -p leptonica
-nix-shell -p libreoffice
-nix-shell -p unpaper
-nix-shell -p ocrmypdf
-nix-shell -p python312
-nix-shell -p jbig2enc
-nix-shell -p tesseract
-pip3 install uno opencv-python-headless unoconv pngquant WeasyPrint --break-system-packages
+nix-channel --update
+nix-env -iA nixpkgs.zlib
+nix-env -iA nixpkgs.libtool
+nix-env -iA nixpkgs.pkg-config
+nix-env -iA nixpkgs.jdk17
+nix-env -iA nixpkgs.leptonica
+nix-env -iA nixpkgs.jbig2enc
+nix-env -iA nixpkgs.tesseract
+nix-env -iA nixpkgs.unpaper
+nix-env -iA nixpkgs.libreoffice
+nix-env -iA nixpkgs.ocrmypdf
+
+pip3 install uno opencv-python-headless unoconv pngquant WeasyPrint
 
 mkdir .git
 cd .git
@@ -22,4 +19,4 @@ cd Stirling-PDF
 chmod +x ./gradlew
 ./gradlew build
 
-mv /home/user/app/configs /home/user/app/.git/Stirling-PDF/configs
+mv /home/user/app/configs /home/user/app/Stirling-PDF/configs
