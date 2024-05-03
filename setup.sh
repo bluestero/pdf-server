@@ -13,6 +13,10 @@ nix-env -iA nixpkgs.ocrmypdf
 nix-env -iA nixpkgs.python312
 pip3 install uno opencv-python-headless unoconv pngquant WeasyPrint --break-system-packages
 
+nix-build jbig2enc.nix
+nix-env -i ./result
+rm -rf ./result
+
 mkdir .git
 cd .git
 git clone https://github.com/Stirling-Tools/Stirling-PDF.git
